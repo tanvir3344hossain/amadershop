@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TANVIX BD – Discover More. Live Better.</title>
+<meta name="description" content="TANVIX BD: Bangladeshi online shop for mangoes, mustard oil, gadgets, fashion, home items and education products. Order easily via WhatsApp.">
+<meta property="og:title" content="TANVIX BD – Discover More. Live Better.">
+<meta property="og:description" content="Shop mangoes, mustard oil, gadgets, fashion and more. Order via WhatsApp: 01763-685251.">
+<meta property="og:type" content="website">
+<style>
+/* ===== TANVIX BD styles. Change colors here ===== */
+:root{--navy:#0b1f4d;--blue:#0a6cff;--sky:#eaf2ff;--green:#25d366;--green-d:#0f7a3a;--yellow:#ffc21a;--ink:#16203a;--mut:#5b6785;--bg:#f6f8fc;--card:#fff;--r:16px;--sh:0 4px 18px rgba(11,31,77,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:"Segoe UI","Noto Sans Bengali",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+img{max-width:100%;display:block}a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.wrap{max-width:1200px;margin:auto;padding:0 16px}
+section{padding:38px 0}h2{font-size:1.6rem;color:var(--navy);margin:0 0 6px}.sub{color:var(--mut);margin:0 0 18px}
+button{font:inherit;cursor:pointer}
+.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;background:var(--sky);color:var(--navy);display:inline-flex;gap:6px;align-items:center;justify-content:center;text-decoration:none;transition:.2s}
+.btn:hover{transform:translateY(-1px);filter:brightness(.96)}
+.btn.pri{background:var(--blue);color:#fff}.btn.nav{background:var(--navy);color:#fff}.btn.wa{background:var(--green);color:#06260f}.btn.wa:hover{background:#1ebe5b}.btn.yel{background:var(--yellow);color:#3a2b00}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.wai{width:20px;height:20px;fill:currentColor}
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.hd{display:flex;align-items:center;gap:10px;padding:10px 16px;max-width:1200px;margin:auto;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:800;font-size:1.25rem}
+.logo i{background:var(--blue);width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-style:normal;box-shadow:0 0 0 3px rgba(10,108,255,.35)}
+.logo small{display:block;font-size:.6rem;font-weight:500;opacity:.8;margin-top:-4px}
+.search{flex:1 1 260px;order:3;display:flex;min-width:0}
+.search input{flex:1;min-width:0;border:0;border-radius:10px 0 0 10px;padding:10px 12px;font:inherit}
+.search button{border:0;background:var(--blue);color:#fff;border-radius:0 10px 10px 0;padding:0 14px}
+.ic{background:transparent;border:0;color:#fff;position:relative;font-size:1.3rem;padding:6px 8px;border-radius:8px}
+.ic:hover{background:rgba(255,255,255,.12)}
+.cnt{position:absolute;top:-2px;right:-2px;background:var(--yellow);color:#000;border-radius:99px;font-size:.7rem;font-weight:800;min-width:18px;height:18px;display:grid;place-items:center}
+.sp{flex:1}
+@media(min-width:760px){.search{order:0;flex:1 1 360px;max-width:520px}.sp{display:none}}
+/* menu */
+#ov{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.25s;z-index:60}
+#ov.on{opacity:1;pointer-events:auto}
+#menu{position:fixed;top:0;left:0;bottom:0;width:min(320px,88vw);background:#fff;z-index:70;transform:translateX(-102%);transition:.3s;overflow:auto;padding:14px}
+#menu.on{transform:none}#menu a{display:block;padding:10px 12px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:600}
+#menu a:hover{background:var(--sky)}#menu h3{margin:14px 12px 4px;font-size:.85rem;color:var(--mut)}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),#12358f 60%,var(--blue));color:#fff;padding:54px 0}
+.hero .wrap{display:grid;gap:24px;align-items:center}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1.2fr .8fr}}
+.hero h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.1;margin:0 0 10px}
+.hero p{opacity:.92;max-width:52ch}
+.hero .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.hero .art{font-size:7rem;text-align:center;background:rgba(255,255,255,.1);border-radius:28px;padding:24px;letter-spacing:8px}
+.offer{background:var(--yellow);color:#3a2b00;border-radius:var(--r);padding:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.offer b{font-size:1.2rem}
+/* grids */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.cat{background:var(--card);border:2px solid transparent;border-radius:var(--r);padding:16px 10px;text-align:center;box-shadow:var(--sh);font-weight:700;color:var(--navy);transition:.2s}
+.cat:hover,.cat.on{border-color:var(--blue);background:var(--sky)}.cat span{display:block;font-size:2rem}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:flex;flex-direction:column}
+.imgw{position:relative;background:var(--sky)}.imgw img{width:100%;aspect-ratio:1;object-fit:cover;cursor:pointer}
+.badge{position:absolute;top:10px;left:10px;background:var(--yellow);color:#3a2b00;font-weight:800;border-radius:99px;padding:2px 10px;font-size:.8rem}
+.wish{position:absolute;top:8px;right:8px;background:#fff;border:0;border-radius:50%;width:36px;height:36px;font-size:1.1rem;box-shadow:var(--sh);color:#9aa3b8}
+.wish.on{color:#e0245e}
+.cb{padding:12px;display:flex;flex-direction:column;gap:7px;flex:1}.cb h3{font-size:1rem;margin:0}
+.price{font-size:1.15rem;font-weight:800;color:var(--blue)}.price s{color:var(--mut);font-weight:400;font-size:.9rem;margin-left:6px}
+.stk{font-size:.8rem;color:var(--green-d);font-weight:600}.stk.out{color:#c0262d}
+.qty{display:inline-flex;align-items:center;border:1px solid #cfd8ee;border-radius:10px;overflow:hidden;width:max-content}
+.qty button{border:0;background:var(--sky);width:34px;height:34px;font-weight:800}.qty input{width:42px;text-align:center;border:0;font:inherit;font-weight:700;background:#fff}
+.btns{display:grid;gap:6px;margin-top:auto}.btns .two{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.btns .btn{padding:9px 8px;font-size:.9rem}
+/* toolbar */
+.tool{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0;align-items:end}
+.tool label{font-size:.8rem;color:var(--mut);display:grid;gap:3px}.tool select,.tool input{padding:9px;border-radius:10px;border:1px solid #cfd8ee;font:inherit;background:#fff}
+.empty{text-align:center;padding:36px;background:#fff;border-radius:var(--r);color:var(--mut);grid-column:1/-1}
+/* gallery */
+.gal{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.gal button{border:0;padding:0;border-radius:14px;overflow:hidden;position:relative}.gal img{aspect-ratio:1;object-fit:cover;width:100%}
+.gal span{position:absolute;bottom:0;left:0;right:0;background:rgba(11,31,77,.75);color:#fff;font-size:.8rem;padding:4px 8px}
+.info{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.info div{background:#fff;border-radius:var(--r);padding:16px;box-shadow:var(--sh)}.info b{display:block;color:var(--navy)}
+.edu{background:var(--sky);border-radius:var(--r);padding:18px}
+details{background:#fff;border-radius:12px;padding:12px 14px;margin-bottom:8px;box-shadow:var(--sh)}summary{font-weight:700;cursor:pointer}
+form{display:grid;gap:10px}form input,form textarea{padding:10px;border:1px solid #cfd8ee;border-radius:10px;font:inherit;width:100%}
+.err{color:#c0262d;font-size:.85rem;min-height:1em}
+.two-col{display:grid;gap:24px}@media(min-width:800px){.two-col{grid-template-columns:1fr 1fr}}
+.pol{background:#fff;border-radius:var(--r);padding:18px;margin-bottom:12px;box-shadow:var(--sh)}
+.note{font-size:.85rem;background:#fff8dc;border-left:4px solid var(--yellow);padding:8px 12px;border-radius:8px}
+footer{background:var(--navy);color:#cfd8f3;padding:34px 0 90px}footer a{color:#fff;display:block;padding:2px 0}
+.fg{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}footer h4{color:#fff;margin:0 0 8px}
+/* dialogs */
+dialog{border:0;border-radius:var(--r);padding:0;width:min(760px,94vw);max-height:92vh;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(0,0,0,.55)}.dc{padding:18px;position:relative}
+.x{position:absolute;top:8px;right:10px;border:0;background:var(--sky);border-radius:50%;width:34px;height:34px;font-size:1.1rem;z-index:2}
+.dgrid{display:grid;gap:18px}@media(min-width:700px){.dgrid{grid-template-columns:1fr 1fr}}
+.thumbs{display:flex;gap:8px;margin-top:8px}.thumbs img{width:62px;height:62px;border-radius:10px;object-fit:cover;cursor:pointer;border:2px solid transparent}.thumbs img:hover{border-color:var(--blue)}
+#dCart{margin:0 0 0 auto;height:100%;max-height:100%;width:min(460px,100%);border-radius:0}
+.ci{display:grid;grid-template-columns:60px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid #e3e8f5;align-items:center}.ci img{width:60px;height:60px;border-radius:10px;object-fit:cover}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(30px);background:var(--navy);color:#fff;padding:10px 18px;border-radius:99px;opacity:0;transition:.3s;z-index:200;pointer-events:none;max-width:90vw}
+#toast.on{opacity:1;transform:translateX(-50%)}
+/* floating whatsapp */
+.fwa{position:fixed;right:16px;bottom:16px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.3);transition:.2s}
+.fwa:hover{background:#128c4a;transform:scale(1.08)}.fwa svg{width:32px;height:32px;fill:#fff}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a href="#products" style="position:absolute;left:-999px" class="btn">Skip to products</a>
+
+<header>
+ <div class="hd">
+  <button class="ic" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+  <a class="logo" href="#home" aria-label="TANVIX BD home"><i>T</i><span>TANVIX BD<small>Discover More. Live Better.</small></span></a>
+  <div class="sp"></div>
+  <button class="ic" id="lang" aria-label="Switch language">বাং</button>
+  <button class="ic" data-act="account" aria-label="Account">👤</button>
+  <button class="ic" data-act="openWish" aria-label="Wishlist">♥<span class="cnt" id="wcnt">0</span></button>
+  <button class="ic" data-act="openCart" aria-label="Shopping cart">🛒<span class="cnt" id="ccnt">0</span></button>
+  <form class="search" id="sf" role="search" onsubmit="return false"><input id="q" list="sug" type="search" placeholder="Search products… পণ্য খুঁজুন" aria-label="Search products" autocomplete="off"><datalist id="sug"></datalist><button aria-label="Search">🔍</button></form>
+ </div>
+</header>
+
+<div id="ov"></div>
+<nav id="menu" aria-label="Main menu">
+ <a href="#home" data-bn="হোম">Home</a>
+ <a href="#products" data-cat="all" data-bn="সব পণ্য">All Products</a>
+ <a href="#categories" data-bn="ক্যাটাগরি">Categories</a>
+ <a href="#offers" data-bn="বিশেষ অফার">Special Offers</a>
+ <h3>Shop</h3>
+ <a href="#mango" data-bn="আম">Mango (আম)</a>
+ <a href="#mustard" data-bn="সরিষার তেল">Mustard Oil (সরিষার তেল)</a>
+ <a href="#products" data-cat="gadgets">Gadgets</a><a href="#products" data-cat="electronics">Electronics</a>
+ <a href="#products" data-cat="fashion">Fashion</a><a href="#products" data-cat="accessories">Accessories</a>
+ <a href="#products" data-cat="home">Home &amp; Kitchen</a><a href="#products" data-cat="food">Food &amp; Grocery</a>
+ <a href="#education" data-bn="শিক্ষা">Education</a><a href="#gallery" data-bn="ফটো গ্যালারি">Photo Gallery</a>
+ <h3>Info</h3>
+ <a href="#about" data-bn="আমাদের সম্পর্কে">About Us (আমাদের সম্পর্কে)</a><a href="#contact" data-bn="যোগাযোগ">Contact Us</a>
+ <a href="#faq">FAQ</a><a href="#delivery">Delivery &amp; Return Policy</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a>
+</nav>
+
+<main id="home">
+<div class="hero"><div class="wrap">
+ <div><h1>TANVIX BD<br><span style="color:var(--yellow)">Discover More. Live Better.</span></h1>
+ <p>বাংলাদেশের অনলাইন শপ: আম, সরিষার তেল, গ্যাজেট, ফ্যাশন ও আরও অনেক কিছু। পছন্দ করুন, WhatsApp-এ অর্ডার করুন।</p>
+ <div class="row"><a class="btn yel" href="#products" data-cat="all">Shop Now</a><a class="btn" href="#categories">Explore Products</a><a class="btn wa" id="heroWa" target="_blank" rel="noopener"><svg class="wai" viewBox="0 0 32 32"><use href="#wa"/></svg>WhatsApp</a></div></div>
+ <div class="art" aria-hidden="true">🥭🌻🎧</div>
+</div></div>
+
+<section id="offers"><div class="wrap">
+ <div class="offer"><div><b>Special Offers · বিশেষ অফার</b><br>Discounted products below. Prices and stock are sample data, so confirm on WhatsApp.</div><a class="btn nav" href="#products" data-cat="all">See all products</a></div>
+ <div class="grid" id="gOffers" style="margin-top:16px"></div>
+</div></section>
+
+<section id="categories"><div class="wrap"><h2 data-bn="জনপ্রিয় ক্যাটাগরি">Popular Categories</h2><p class="sub">Tap a category to filter products.</p><div class="cats" id="catGrid"></div></div></section>
+
+<section><div class="wrap"><h2>Featured Products</h2><div class="grid" id="gFeat"></div></div></section>
+<section><div class="wrap"><h2>Best Sellers</h2><div class="grid" id="gBest"></div></div></section>
+<section><div class="wrap"><h2>New Arrivals</h2><div class="grid" id="gNew"></div></div></section>
+<section id="mango"><div class="wrap"><h2>Seasonal Mango Collection · আম</h2><p class="sub">Seasonal availability varies. Please confirm stock before ordering.</p><div class="grid" id="gMango"></div></div></section>
+<section id="mustard"><div class="wrap"><h2>Mustard Oil Collection · সরিষার তেল</h2><div class="grid" id="gMustard"></div></div></section>
+
+<section id="products"><div class="wrap">
+ <h2 data-bn="সব পণ্য">All Products</h2>
+ <div class="cats" id="chips" style="margin-bottom:6px"></div>
+ <div class="tool">
+  <label>Sort<select id="sort"><option value="">Default</option><option value="lo">Price: Low to High</option><option value="hi">Price: High to Low</option></select></label>
+  <label>Max price: <b id="maxv"></b><input type="range" id="max" min="0" max="3000" step="50" value="3000"></label>
+  <button class="btn" id="reset">Reset filters</button>
+ </div>
+ <div class="grid" id="gAll" aria-live="polite"></div>
+</div></section>
+
+<section id="education"><div class="wrap"><div class="edu"><h2>Education · শিক্ষা</h2><p class="sub">Books, flashcards and study materials for learners of all ages (sample items).</p><div class="grid" id="gEdu"></div></div></div></section>
+
+<section id="gallery"><div class="wrap"><h2 data-bn="ফটো গ্যালারি">Photo Gallery</h2><p class="sub">Tap a photo to enlarge. Replace with your own photos later.</p><div class="gal" id="galGrid"></div></div></section>
+
+<section><div class="wrap"><div class="info">
+ <div><b>🚚 Delivery</b>Delivery charge and time are confirmed on WhatsApp.</div>
+ <div><b>💬 Customer service</b>Call or WhatsApp 01763-685251.</div>
+ <div><b>🏷️ Clear pricing</b>Prices shown in Bangladeshi Taka (৳).</div>
+ <div><b>↩️ Returns</b>See our Delivery &amp; Return Policy below.</div></div></div></section>
+
+<section id="about"><div class="wrap"><h2>About Us · আমাদের সম্পর্কে</h2>
+ <div class="pol"><p>TANVIX BD is a growing Bangladeshi online shopping brand. We focus on <b>product variety</b>, <b>clear pricing</b>, <b>friendly customer service</b> and <b>convenient ordering</b> through WhatsApp.</p>
+ <p>TANVIX BD হলো একটি ক্রমবর্ধমান বাংলাদেশি অনলাইন শপিং ব্র্যান্ড। আমরা পণ্যের বৈচিত্র্য, স্পষ্ট দাম, ভালো সেবা এবং সহজ অর্ডারে গুরুত্ব দিই।</p></div></div></section>
+
+<section id="contact"><div class="wrap two-col">
+ <div><h2 data-bn="যোগাযোগ">Contact Us</h2>
+  <p><b>TANVIX BD</b><br>Phone / WhatsApp: <a href="tel:01763685251">01763-685251</a></p>
+  <a class="btn wa" id="contactWa" target="_blank" rel="noopener"><svg class="wai" viewBox="0 0 32 32"><use href="#wa"/></svg>Chat on WhatsApp</a>
+  <p>Support: use WhatsApp or the form. We reply as soon as we can.</p></div>
+ <form id="cf" novalidate><input id="cn" placeholder="Your name" aria-label="Name"><input id="cp" placeholder="Phone (01XXXXXXXXX)" inputmode="tel" aria-label="Phone"><textarea id="cm" rows="4" placeholder="Message" aria-label="Message"></textarea><div class="err" id="cerr" role="alert"></div><button class="btn wa">Send via WhatsApp</button></form>
+</div></section>
+
+<section id="faq"><div class="wrap"><h2>FAQ</h2>
+ <details><summary>How do I order?</summary><p>Click <b>Order Now</b> or <b>Order via WhatsApp</b>. A pre-filled message opens. Send it, and we confirm availability, delivery charge and details.</p></details>
+ <details><summary>Is payment taken on this website?</summary><p>No. This site does not process payments. Payment method is agreed on WhatsApp.</p></details>
+ <details><summary>Is my order confirmed after I click the button?</summary><p>No. The order is confirmed only after you send the WhatsApp message and the seller replies.</p></details></div></section>
+
+<section id="delivery"><div class="wrap"><h2>Delivery &amp; Return Policy</h2><div class="pol"><p class="note">Template: edit this text to match your real policy.</p><p>Delivery areas, charges and time are confirmed with the customer on WhatsApp before dispatch. Please check products on receipt and contact us promptly if an item is damaged or incorrect. Return and refund eligibility is decided case by case, as agreed with the seller.</p></div></div></section>
+<section id="privacy"><div class="wrap"><h2>Privacy Policy</h2><div class="pol"><p class="note">Template: edit before launch.</p><p>This demo stores only your cart and wishlist in your own browser (localStorage). Name, phone and address typed in the checkout form are not saved. They are used only to build your WhatsApp message.</p></div></div></section>
+<section id="terms"><div class="wrap"><h2>Terms &amp; Conditions</h2><div class="pol"><p class="note">Template: edit before launch.</p><p>Prices, stock and descriptions are sample data and may change. An order is confirmed only when the seller confirms it on WhatsApp. This front-end demo does not process payments.</p></div></div></section>
+
+<section><div class="wrap"><div class="offer" style="background:var(--sky);color:var(--navy)"><div><b>Newsletter</b><br>Get offers and new arrivals.</div>
+ <form id="nf" style="grid-auto-flow:column" novalidate><input id="ne" type="email" placeholder="Your email" aria-label="Email"><button class="btn pri">Subscribe</button></form><div class="err" id="nerr" role="alert" style="width:100%"></div></div></div></section>
+</main>
+
+<footer><div class="wrap fg">
+ <div><h4>TANVIX BD</h4>Discover More. Live Better.<br>Phone: 01763-685251</div>
+ <div><h4>Categories</h4><div id="fcats"></div></div>
+ <div><h4>Links</h4><a href="#about">About</a><a href="#contact">Contact</a><a href="#faq">FAQ</a><a href="#delivery">Delivery &amp; Return</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a></div>
+ <div><h4>© <span id="yr"></span> TANVIX BD</h4>All rights reserved.</div>
+</div></footer>
+
+<a class="fwa" id="fwa" target="_blank" rel="noopener" aria-label="Chat with TANVIX BD on WhatsApp" title="WhatsApp"><svg viewBox="0 0 32 32"><use href="#wa"/></svg></a>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<svg width="0" height="0" style="position:absolute"><symbol id="wa" viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.5 19.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 0 1 16 5.4zM12 10.7c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.4 6.9 6 3.4 1.3 4.1 1 4.8.9.7-.1 2.4-1 2.700-1.900.3-.9.3-1.700.2-1.900-.1-.2-.4-.3-.8-.5l-2.500-1.200c-.3-.1-.6-.2-.8.2-.3.4-1 1.200-1.200 1.400-.2.2-.4.3-.8.1-.4-.2-1.600-.6-3-1.900-1.100-1-1.900-2.200-2.100-2.600-.2-.4 0-.6.200-.8l.6-.7c.2-.2.2-.4.4-.6.1-.3.1-.5 0-.7l-1.100-2.700c-.3-.7-.6-.6-.8-.6z"/></symbol></svg>
+
+<!-- Product details -->
+<dialog id="dDet" aria-label="Product details"><div class="dc"><button class="x" data-close aria-label="Close">✕</button><div id="detBody"></div></div></dialog>
+<!-- Wishlist -->
+<dialog id="dWish" aria-label="Wishlist"><div class="dc"><button class="x" data-close aria-label="Close">✕</button><h2>Wishlist ♥</h2><div class="grid" id="wishBody"></div></div></dialog>
+<!-- Lightbox -->
+<dialog id="dLight" aria-label="Photo"><div class="dc"><button class="x" data-close aria-label="Close">✕</button><img id="lbImg" alt="" style="width:100%;border-radius:12px"><p id="lbCap" style="text-align:center;margin:8px 0 0"></p></div></dialog>
+<!-- Cart + checkout -->
+<dialog id="dCart" aria-label="Shopping cart"><div class="dc"><button class="x" data-close aria-label="Close">✕</button><h2>Your Cart 🛒</h2><div id="cartBody"></div>
+ <div id="cartFoot">
+  <h3>Checkout details (optional)</h3>
+  <form id="ckf" novalidate><input id="kn" placeholder="Full name" aria-label="Full name"><input id="kp" placeholder="Phone (01XXXXXXXXX)" inputmode="tel" aria-label="Phone"><textarea id="ka" rows="2" placeholder="Delivery address" aria-label="Address"></textarea><textarea id="kt" rows="2" placeholder="Order notes" aria-label="Notes"></textarea><div class="err" id="kerr" role="alert"></div></form>
+  <p class="note">This front-end demo does not process payments or guarantee order placement. Your order is placed only when you send the WhatsApp message and the seller confirms.</p>
+  <div class="btns"><button class="btn wa" data-act="orderAll"><svg class="wai" viewBox="0 0 32 32"><use href="#wa"/></svg>Order All via WhatsApp</button><div class="two"><button class="btn" data-act="keep">Continue Shopping</button><button class="btn" data-act="clear">Clear Cart</button></div></div>
+ </div></div></dialog>
+
+<script>
+/* ============ TANVIX BD script ============ */
+const WA = "8801763685251";                       // WhatsApp number (international)
+const WA_LINK = "https://wa.me/" + WA;
+/* Categories: add a new object here and it appears everywhere */
+const CATS = [
+ {id:"mango",bn:"আম",en:"Mango",e:"🥭"},{id:"mustard",bn:"সরিষার তেল",en:"Mustard Oil",e:"🌻"},
+ {id:"food",bn:"খাবার",en:"Food & Grocery",e:"🛒"},{id:"gadgets",bn:"গ্যাজেট",en:"Gadgets",e:"⌚"},
+ {id:"electronics",bn:"ইলেকট্রনিক্স",en:"Electronics",e:"🔌"},{id:"fashion",bn:"ফ্যাশন",en:"Fashion",e:"👕"},
+ {id:"accessories",bn:"এক্সেসরিজ",en:"Accessories",e:"👛"},{id:"home",bn:"হোম ও কিচেন",en:"Home & Kitchen",e:"🍳"},
+ {id:"education",bn:"শিক্ষা",en:"Education",e:"📘"}
+];
+/* Placeholder image maker. To use your own photo, add  img:"assets/name.jpg"  to a product. */
+const ph=(e,c)=>"data:image/svg+xml;utf8,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'><rect width='400' height='400' fill='${c}'/><text x='200' y='245' font-size='150' text-anchor='middle'>${e}</text></svg>`);
+/* Products. p = price, o = old price (optional), s = stock, t = tags (feat/best/new) */
+const P = [
+ {id:1,n:"Himsagar Mango 5kg",c:"mango",p:650,o:750,s:30,t:["feat","new"],e:"🥭",col:"#ffe08a",d:"Seasonal Himsagar mangoes, 5kg box. Availability depends on season."},
+ {id:2,n:"Langra Mango 5kg",c:"mango",p:700,o:800,s:20,t:["best"],e:"🥭",col:"#ffd9a0",d:"Seasonal Langra mangoes, 5kg box."},
+ {id:3,n:"Pure Mustard Oil 1L",c:"mustard",p:340,o:380,s:50,t:["feat","best"],e:"🌻",col:"#ffe066",d:"Mustard oil for cooking, 1 litre bottle."},
+ {id:4,n:"Mustard Oil 5L",c:"mustard",p:1650,o:1850,s:15,t:["best"],e:"🌻",col:"#ffd24d",d:"Mustard oil, 5 litre can."},
+ {id:5,n:"Mustard Oil 500ml",c:"mustard",p:180,s:40,t:["new"],e:"🌻",col:"#fff0a8",d:"Mustard oil, 500ml bottle."},
+ {id:6,n:"Dates (Khejur) 500g",c:"food",p:420,s:25,t:["new"],e:"🌴",col:"#f3d9b8",d:"Dates, 500g pack."},
+ {id:7,n:"Wireless Earbuds",c:"gadgets",p:1290,o:1690,s:18,t:["feat","best"],e:"🎧",col:"#cfe0ff",d:"Bluetooth wireless earbuds with charging case."},
+ {id:8,n:"Smart Watch",c:"gadgets",p:2490,o:2990,s:10,t:["feat","new"],e:"⌚",col:"#d6e4ff",d:"Smart watch with touch display."},
+ {id:9,n:"Power Bank 10000mAh",c:"gadgets",p:1190,s:22,t:["best"],e:"🔋",col:"#c9f2d6",d:"Portable 10000mAh power bank."},
+ {id:10,n:"Bluetooth Speaker",c:"electronics",p:1590,o:1890,s:12,t:["feat"],e:"🔊",col:"#e0d4ff",d:"Portable Bluetooth speaker."},
+ {id:11,n:"LED Desk Lamp",c:"electronics",p:790,s:16,t:["new"],e:"💡",col:"#fff3b8",d:"LED desk lamp for study and work."},
+ {id:12,n:"Cotton Panjabi",c:"fashion",p:1450,o:1700,s:14,t:["feat"],e:"👕",col:"#d9ecff",d:"Cotton panjabi. Sizes confirmed on WhatsApp."},
+ {id:13,n:"Winter Shawl",c:"fashion",p:990,s:20,t:["new"],e:"🧣",col:"#ffd6e0",d:"Soft winter shawl."},
+ {id:14,n:"Leather Wallet",c:"accessories",p:550,o:650,s:35,t:["best"],e:"👛",col:"#e8d5c4",d:"Wallet with multiple card slots."},
+ {id:15,n:"Sunglasses",c:"accessories",p:690,s:0,t:[],e:"🕶️",col:"#dfe6f5",d:"UV-protection sunglasses. Currently out of stock."},
+ {id:16,n:"Non-stick Frying Pan",c:"home",p:1190,o:1390,s:17,t:["feat"],e:"🍳",col:"#e3e8f0",d:"Non-stick frying pan, 26cm."},
+ {id:17,n:"Steel Water Bottle",c:"home",p:450,s:28,t:["best"],e:"🧴",col:"#d2f0ff",d:"Stainless steel water bottle, 750ml."},
+ {id:18,n:"English Grammar Book",c:"education",p:350,s:30,t:["feat"],e:"📘",col:"#cfe2ff",d:"English grammar practice book."},
+ {id:19,n:"Kids Learning Flashcards",c:"education",p:290,o:340,s:26,t:["new"],e:"🔤",col:"#ffe3b3",d:"Alphabet and number flashcards for kids."},
+ {id:20,n:"Study Notebook Set (5)",c:"education",p:240,s:40,t:["best"],e:"📓",col:"#e1f5d8",d:"Set of 5 ruled notebooks."}
+];
+P.forEach(p=>{p.imgs=p.imgs||[p.img||ph(p.e,p.col),ph(p.e,"#eaf2ff"),ph(p.e,"#fff3cf")];p.img=p.imgs[0];});
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const tk=n=>"৳"+n.toLocaleString("en-US");
+const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
+let cart=get("tx_cart",{}), wish=get("tx_wish",[]);
+const find=id=>P.find(p=>p.id==id);
+const off=p=>p.o?Math.round((1-p.p/p.o)*100):0;
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2400)}
+const waUrl=m=>WA_LINK+"?text="+encodeURIComponent(m);
+function openWA(m){window.open(waUrl(m),"_blank","noopener")}
+
+/* ---------- WhatsApp messages ---------- */
+function orderOne(p,q){
+ openWA(`Hello TANVIX BD! I want to order:\n\nProduct: ${p.n}\nPrice: ৳${p.p}\nQuantity: ${q}\nSubtotal: ৳${p.p*q}\n\nPlease confirm product availability, delivery charge, and delivery details.`);
+}
+function orderAll(){
+ const ids=Object.keys(cart);
+ if(!ids.length){toast("Your cart is empty. Add a product first.");return}
+ const ph_=$("#kp").value.trim();
+ if(ph_&&!/^01\d{9}$/.test(ph_)){$("#kerr").textContent="Enter a valid phone number like 01XXXXXXXXX.";return}
+ $("#kerr").textContent="";
+ let m="Hello TANVIX BD! I want to order:\n\n",tot=0;
+ ids.forEach((id,i)=>{const p=find(id),q=cart[id];tot+=p.p*q;m+=`${i+1}. ${p.n}\nPrice: ৳${p.p} | Quantity: ${q} | Subtotal: ৳${p.p*q}\n\n`});
+ m+=`Total: ৳${tot}\n`;
+ const n=$("#kn").value.trim(),a=$("#ka").value.trim(),t=$("#kt").value.trim();
+ if(n||ph_||a||t)m+=`\nName: ${n}\nPhone: ${ph_}\nAddress: ${a}\nNotes: ${t}\n`;
+ m+="\nPlease confirm product availability, delivery charge, and delivery details.";
+ openWA(m);
+}
+
+/* ---------- product card ---------- */
+function card(p){
+ const out=p.s<=0, w=wish.includes(p.id);
+ return `<article class="card" data-card data-id="${p.id}">
+ <div class="imgw"><img loading="lazy" src="${p.img}" alt="${p.n}" data-act="det">${off(p)?`<span class="badge">-${off(p)}%</span>`:""}
+ <button class="wish ${w?"on":""}" data-act="wish" aria-label="${w?"Remove from":"Add to"} wishlist" aria-pressed="${w}">♥</button></div>
+ <div class="cb"><h3>${p.n}</h3><div class="price">${tk(p.p)}${p.o?`<s>${tk(p.o)}</s>`:""}</div>
+ <div class="stk ${out?"out":""}">${out?"Out of stock":"In stock ("+p.s+" available)"}</div>
+ <div class="qty"><button data-act="dec" aria-label="Decrease quantity">−</button><input class="q" value="1" readonly aria-label="Quantity"><button data-act="inc" aria-label="Increase quantity">+</button></div>
+ <div class="btns"><button class="btn pri" data-act="order" ${out?"disabled":""}>Order Now</button>
+ <button class="btn wa" data-act="order" ${out?"disabled":""}><svg class="wai" viewBox="0 0 32 32"><use href="#wa"/></svg>Order via WhatsApp</button>
+ <div class="two"><button class="btn" data-act="cart" ${out?"disabled":""}>Add to Cart</button><button class="btn" data-act="det">Details</button></div></div></div></article>`;
+}
+const fill=(sel,list)=>{$(sel).innerHTML=list.length?list.map(card).join(""):`<div class="empty">😕 No products found.</div>`};
+
+/* ---------- filters ---------- */
+let F={q:"",cat:"all",sort:"",max:3000};
+function renderAll(){
+ let l=P.filter(p=>(F.cat=="all"||p.c==F.cat)&&p.p<=F.max&&p.n.toLowerCase().includes(F.q.toLowerCase()));
+ if(F.sort=="lo")l.sort((a,b)=>a.p-b.p);if(F.sort=="hi")l.sort((a,b)=>b.p-a.p);
+ fill("#gAll",l);
+ $$("#chips .cat").forEach(c=>c.classList.toggle("on",c.dataset.cat==F.cat));
+ $("#maxv").textContent=tk(F.max);
+ if(!l.length)$("#gAll").innerHTML=`<div class="empty">😕 No products match your search or filters.<br><button class="btn pri" id="r2" style="margin-top:10px">Show all products</button></div>`;
+}
+function setCat(c){F.cat=c;renderAll();$("#products").scrollIntoView()}
+function renderStatic(){
+ fill("#gOffers",P.filter(p=>p.o).slice(0,8));
+ fill("#gFeat",P.filter(p=>p.t.includes("feat")).slice(0,8));
+ fill("#gBest",P.filter(p=>p.t.includes("best")).slice(0,8));
+ fill("#gNew",P.filter(p=>p.t.includes("new")).slice(0,8));
+ fill("#gMango",P.filter(p=>p.c=="mango"));fill("#gMustard",P.filter(p=>p.c=="mustard"));fill("#gEdu",P.filter(p=>p.c=="education"));
+ renderAll();
+}
+function refreshCards(){renderStatic();}
+
+/* ---------- cart ---------- */
+function saveCart(){put("tx_cart",cart);const n=Object.values(cart).reduce((a,b)=>a+b,0);$("#ccnt").textContent=n;renderCart()}
+function addCart(id,q){const p=find(id);cart[id]=Math.min((cart[id]||0)+q,p.s);saveCart();toast("Added to cart ✓")}
+function renderCart(){
+ const ids=Object.keys(cart);
+ $("#cartFoot").style.display=ids.length?"":"none";
+ if(!ids.length){$("#cartBody").innerHTML=`<div class="empty">🛒 Your cart is empty.<br>Browse products and tap Add to Cart.</div>`;return}
+ let tot=0,old=0;
+ $("#cartBody").innerHTML=ids.map(id=>{const p=find(id),q=cart[id];tot+=p.p*q;old+=(p.o||p.p)*q;
+  return `<div class="ci"><img src="${p.img}" alt="${p.n}"><div><b>${p.n}</b><br>${tk(p.p)} × ${q} = <b>${tk(p.p*q)}</b>
+  <div style="display:flex;gap:6px;align-items:center;margin-top:4px"><div class="qty"><button data-act="cdec" data-id="${id}" aria-label="Decrease">−</button><input value="${q}" readonly aria-label="Quantity"><button data-act="cinc" data-id="${id}" aria-label="Increase">+</button></div><button class="btn" data-act="crem" data-id="${id}">Remove</button></div></div></div>`}).join("")+
+  `<p>${old>tot?`Discount saved: <b>${tk(old-tot)}</b><br>`:""}<span style="font-size:1.2rem">Total: <b>${tk(tot)}</b></span></p>`;
+}
+
+/* ---------- wishlist ---------- */
+function toggleWish(id){wish=wish.includes(id)?wish.filter(x=>x!=id):[...wish,id];put("tx_wish",wish);$("#wcnt").textContent=wish.length;refreshCards();if($("#dWish").open)renderWish()}
+function renderWish(){const l=P.filter(p=>wish.includes(p.id));$("#wishBody").innerHTML=l.length?l.map(card).join(""):`<div class="empty">♥ Your wishlist is empty.</div>`}
+
+/* ---------- details modal ---------- */
+function showDet(id){
+ const p=find(id),out=p.s<=0,rel=P.filter(x=>x.c==p.c&&x.id!=p.id).slice(0,3);
+ $("#detBody").innerHTML=`<div class="dgrid" data-card data-id="${p.id}"><div><img id="mainImg" src="${p.img}" alt="${p.n}" style="width:100%;border-radius:14px"><div class="thumbs">${p.imgs.map((s,i)=>`<img src="${s}" alt="${p.n} view ${i+1}" data-act="thumb">`).join("")}</div></div>
+ <div><h2>${p.n}</h2><div class="price">${tk(p.p)}${p.o?`<s>${tk(p.o)}</s> <span class="badge" style="position:static">-${off(p)}%</span>`:""}</div>
+ <p>${p.d}</p><div class="stk ${out?"out":""}">${out?"Out of stock":"In stock ("+p.s+" available)"}</div><br>
+ <div class="qty"><button data-act="dec" aria-label="Decrease">−</button><input class="q" value="1" readonly aria-label="Quantity"><button data-act="inc" aria-label="Increase">+</button></div>
+ <div class="btns" style="margin-top:10px"><button class="btn pri" data-act="order" ${out?"disabled":""}>Order Now</button><button class="btn wa" data-act="order" ${out?"disabled":""}><svg class="wai" viewBox="0 0 32 32"><use href="#wa"/></svg>Order via WhatsApp</button><button class="btn" data-act="cart" ${out?"disabled":""}>Add to Cart</button></div>
+ <p class="note" style="margin-top:10px">Delivery and return: charge and time are confirmed on WhatsApp. See the Delivery &amp; Return Policy.</p></div></div>
+ ${rel.length?`<h3>Related products</h3><div class="grid">${rel.map(r=>`<div class="card"><img loading="lazy" src="${r.img}" alt="${r.n}" data-act="det" data-id="${r.id}" style="cursor:pointer"><div class="cb"><b>${r.n}</b><span class="price">${tk(r.p)}</span></div></div>`).join("")}</div>`:""}`;
+ if(!$("#dDet").open)$("#dDet").showModal();
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click",e=>{
+ const b=e.target.closest("[data-act]");
+ if(b){
+  const a=b.dataset.act,card_=b.closest("[data-card]"),id=+(b.dataset.id||(card_&&card_.dataset.id)||0),p=id&&find(id);
+  const qi=card_&&card_.querySelector(".q"),q=qi?+qi.value:1;
+  if(a=="inc"&&p)qi.value=Math.min(q+1,Math.max(p.s,1));
+  else if(a=="dec")qi.value=Math.max(q-1,1);
+  else if(a=="order"&&p){if(p.s<=0)return toast("Out of stock");orderOne(p,q)}
+  else if(a=="cart"&&p)addCart(id,q);
+  else if(a=="wish")toggleWish(id);
+  else if(a=="det")showDet(id);
+  else if(a=="thumb")$("#mainImg").src=b.src;
+  else if(a=="openCart"){renderCart();$("#dCart").showModal()}
+  else if(a=="openWish"){renderWish();$("#dWish").showModal()}
+  else if(a=="cinc"){cart[id]=Math.min(cart[id]+1,find(id).s);saveCart()}
+  else if(a=="cdec"){cart[id]=Math.max(cart[id]-1,1);saveCart()}
+  else if(a=="crem"){delete cart[id];saveCart()}
+  else if(a=="clear"){cart={};saveCart();toast("Cart cleared")}
+  else if(a=="keep"){$("#dCart").close()}
+  else if(a=="orderAll")orderAll();
+  else if(a=="account")toast("Login needs a secure backend. Not part of this demo.");
+  return;
+ }
+ if(e.target.closest("#menu a"))closeMenu();
+ const c=e.target.closest("[data-cat]");if(c){e.preventDefault();setCat(c.dataset.cat);closeMenu();return}
+ const l=e.target.closest("[data-light]");if(l){$("#lbImg").src=l.dataset.light;$("#lbImg").alt=l.dataset.cap;$("#lbCap").textContent=l.dataset.cap;$("#dLight").showModal()}
+ if(e.target.closest("[data-close]"))e.target.closest("dialog").close();
+ if(e.target.tagName=="DIALOG")e.target.close();
+ if(e.target.id=="r2"||e.target.id=="reset"){F={q:"",cat:"all",sort:"",max:3000};$("#q").value="";$("#sort").value="";$("#max").value=3000;renderAll()}
+});
+/* hamburger */
+const menu=$("#menu"),ov=$("#ov"),bg=$("#burger");
+function closeMenu(){menu.classList.remove("on");ov.classList.remove("on");bg.setAttribute("aria-expanded","false")}
+bg.onclick=()=>{const o=!menu.classList.contains("on");menu.classList.toggle("on",o);ov.classList.toggle("on",o);bg.setAttribute("aria-expanded",o)};
+ov.onclick=closeMenu;document.addEventListener("keydown",e=>{if(e.key=="Escape")closeMenu()});
+/* search + filters */
+$("#q").addEventListener("input",e=>{F.q=e.target.value;renderAll()});
+$("#sf").addEventListener("submit",()=>$("#products").scrollIntoView());
+$("#sort").onchange=e=>{F.sort=e.target.value;renderAll()};
+$("#max").oninput=e=>{F.max=+e.target.value;renderAll()};
+/* forms */
+$("#cf").addEventListener("submit",e=>{e.preventDefault();const n=$("#cn").value.trim(),p=$("#cp").value.trim(),m=$("#cm").value.trim();
+ if(!n||!/^01\d{9}$/.test(p)||m.length<5){$("#cerr").textContent="Please enter your name, a valid phone (01XXXXXXXXX) and a message.";return}
+ $("#cerr").textContent="";openWA(`Hello TANVIX BD!\nName: ${n}\nPhone: ${p}\n\n${m}`)});
+$("#nf").addEventListener("submit",e=>{e.preventDefault();if(!/^\S+@\S+\.\S+$/.test($("#ne").value)){$("#nerr").textContent="Enter a valid email address.";return}
+ $("#nerr").textContent="";$("#ne").value="";toast("Demo only: no email was saved. A backend is needed.")});
+/* language toggle (English / বাংলা) for items with data-bn */
+let bn=false;$$("[data-bn]").forEach(x=>x.dataset.en=x.textContent);
+$("#lang").onclick=()=>{bn=!bn;$$("[data-bn]").forEach(x=>x.textContent=bn?x.dataset.bn:x.dataset.en);$("#lang").textContent=bn?"EN":"বাং";document.documentElement.lang=bn?"bn":"en"};
+
+/* ---------- init ---------- */
+["heroWa","contactWa","fwa"].forEach(i=>$("#"+i).href=WA_LINK);
+$("#yr").textContent=new Date().getFullYear();
+$("#sug").innerHTML=P.map(p=>`<option value="${p.n}">`).join("");
+$("#catGrid").innerHTML=CATS.map(c=>`<button class="cat" data-cat="${c.id}"><span>${c.e}</span>${c.en}<br><small>${c.bn}</small></button>`).join("");
+$("#chips").innerHTML=`<button class="cat" data-cat="all"><span>🛍️</span>All</button>`+CATS.map(c=>`<button class="cat" data-cat="${c.id}"><span>${c.e}</span>${c.en}</button>`).join("");
+$("#fcats").innerHTML=CATS.map(c=>`<a href="#products" data-cat="${c.id}">${c.en}</a>`).join("");
+$("#galGrid").innerHTML=[1,3,7,8,10,12,16,18].map(i=>{const p=find(i);return `<button data-light="${p.img}" data-cap="${p.n}" aria-label="Enlarge ${p.n}"><img loading="lazy" src="${p.img}" alt="${p.n} photo"><span>${p.n}</span></button>`}).join("");
+$("#wcnt").textContent=wish.length;
+renderStatic();saveCart();
+</script>
+</body>
+</html>
